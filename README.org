@@ -1,3 +1,14 @@
 * phone_hacks
 small scripts and hacks for using with my ubuntu touch phone
+** sync calendar with owncloud
+First step: initialize owncloud on phone. To do this set the following
+variables:
+- OCUSER -> Owncloud user name
+- OCPASS -> Owncloud password
+- OCURL -> URL of Owncloud server
+in init_owncloud.sh and execute it.
 
+For each calendar to sync call
+#+BEGIN_SRC sh
+./init_owncloud-calendar.sh <CALDAV-URL> <Calendar Name>
+#+END_SRC
